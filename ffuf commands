@@ -1,0 +1,8 @@
+ffuf -w ~/wordlists/common.txt -u http://ffuf.me/cd/basic/FUZZ
+
+ffuf -w ~/wordlists/common.txt -recursion -u http://ffuf.me/cd/recursion/FUZZ
+
+ffuf -w ~/wordlists/common.txt -e .log -u http://ffuf.me/cd/ext/logs/FUZZ
+
+ffuf -w ~/wordlists/parameters.txt -u http://ffuf.me/cd/param/data?FUZZ=1
+
